@@ -8,4 +8,8 @@ alert (`환영합니다. 당신은 분명 ${name}의 꿈을 해내실 수 있을
 
 //alert와 달리 confirm은 취소와 확인 버튼이 함께 있습니다.
 const yesOrNo = confirm(`당신은 노력하고 있나요?`);
-console.log(yesOrNo); //true, false
+console.log(yesOrNo); //true, false 이 두 결과값을 이용하여 추후 작업
+
+
+const dream = prompt(`당신의 꿈은 무엇인가요`, `직업`);
+confirm (`당신은 현재 ${dream}을 실현시키기 위해 노력하고 있습니까?`);
