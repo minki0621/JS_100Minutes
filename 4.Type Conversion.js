@@ -15,3 +15,9 @@ Boolean() //값이 false가 되는 경우? [0, 빈문자열'', null, undefined, 
 //타입변환 규칙에 따른 특이사항, 암기 필요
 Number(null); //0
 Number(undefined); //NaN, 숫자로 변환될 수 없는 값이기에 NaN
+
+//주의사항2
+Boolean(0) //false
+Boolean('0') //true
+Boolean('') //false
+Boolean(' ') //true
