@@ -37,5 +37,35 @@ console.log('dex' in worrior1); //true
 
 //객체 만들기2
 function findWife(name) {
-  if((name.job && name.age <= 27) || (name.rich && name.age <=32))
+  if((name.job && name.age <= 27) || (name.rich && name.age <=32)) {
+    return '합격!';
+  } else {
+    return '불합격!';
+  }
 }
+
+const anna = {
+  name : 'anna',
+  age : 33,
+  job : false,
+  rich : true
+};
+
+const merry = {
+  name : 'merry',
+  age : 32,
+  job : true,
+  rich : false
+};
+
+const yunyun = {
+  name : 'yunyun',
+  age : 27,
+  job : true,
+  rich : false
+};
+
+console.log(
+  'anna :' + findWife(anna), 
+  'merry :' + findWife(merry), 
+  'yunyun :' + findWife(yunyun));
