@@ -69,3 +69,17 @@ console.log(
   'anna :' + findWife(anna), 
   'merry :' + findWife(merry), 
   'yunyun :' + findWife(yunyun));
+
+
+
+//객체 for ... in 기능
+//객체의 프로퍼티와 값 순차 반환하기
+
+const list = [anna, merry, yunyun];
+console.log(list[0]);
+
+for (i = 0; i < list.length; i++) {
+  for (key in list[i]) {
+    console.log(key + ' : ' + list[i][key]);
+  }
+}
