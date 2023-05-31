@@ -15,3 +15,37 @@ let arr = [
 ]
 
 arr[4]();
+
+//추가
+arr.push (bye = function(){
+  console.log(`byebye`)
+  }
+);
+
+arr[5]();
+
+//제거
+arr.pop ();
+console.log(arr);
+
+//맨 앞에 추가
+arr.unshift(`앞에 unshift 생성`);
+console.log(arr);
+
+//맨 앞에 제거
+arr.shift();
+console.log(arr);
+
+
+//배열을 이용한 for문
+
+//방법 1
+let days = ['월', '화', '수'];
+for (index = 0; index < days.length; index++) {
+  console.log(days[index])
+}
+
+//방법2.. for..of
+for (let day of days){
+  console.log(day)
+}
